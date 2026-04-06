@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2026年一季度十堰联通核心业务政策摘要，涵盖移网、固网、智家及市场激励政策。">
+    <title>2026年一季度十堰联通核心政策摘要</title>
+    <!-- 使用可靠的 CDN 加载 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --china-unicom-red: #E60021;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f4f7f9;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .highlight-red { color: var(--china-unicom-red); font-weight: bold; }
+        .highlight-orange { color: #f97316; font-weight: bold; }
+        
+        .nav-active {
+            color: var(--china-unicom-red);
+            border-bottom: 2px solid var(--china-unicom-red);
+        }
+
+        .section-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            overflow: hidden;
+        }
+        .section-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+        .section-content.expanded {
+            max-height: 3000px; /* 增加最大高度以容纳更多内容 */
+            opacity: 1;
+        }
+
+        .toggle-icon {
+            transition: transform 0.3s;
+        }
+        .toggle-icon.rotate {
+            transform: rotate(180deg);
+        }
+
+        .mock-link {
+            color: #2563eb;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .mock-link:hover {
+            color: #1d4ed8;
+        }
+
+        /* 打印优化 */
+        @media print {
+            .no-print { display: none !important; }
+            header { position: static !important; }
+            .section-content { max-height: none !important; opacity: 1 !important; }
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- 头部区域 -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-[var(--china-unicom-red)] rounded flex items-center justify-center text-white text-xl font-black shadow-md">联</div>
+                <div>
+                    <h1 class="text-xl font-bold text-slate-900 tracking-tight">2026年一季度十堰联通核心政策摘要</h1>
+                    <p class="text-xs text-slate-500">依据：联通十堰营销字〔2026〕1号 | 更新：2026-04-06</p>
+                </div>
+            </div>
+            <div class="flex space-x-2 no-print">
+                <button onclick="expandAll()" class="text-xs px-3 py-1.5 bg-slate-100 border border-slate-200 rounded hover:bg-slate-200 transition font-medium">全部展开</button>
+                <button onclick="collapseAll()" class="text-xs px-3 py-1.5 border border-slate-200 rounded hover:bg-slate-50 transition font-medium text-slate-600">全部折叠</button>
+            </div>
+        </div>
+
+        <!-- 导航区 -->
+        <nav class="bg-white border-t border-slate-100 overflow-x-auto shadow-inner no-print">
+            <div class="max-w-6xl mx-auto px-4 flex space-x-8 h-12 items-center text-sm font-medium whitespace-nowrap">
+                <a href="#mobile" class="nav-item hover:text-[var(--china-unicom-red)] transition py-3 relative border-b-2 border-transparent">移网业务政策</a>
+                <a href="#fixed" class="nav-item hover:text-[var(--china-unicom-red)] transition py-3 relative border-b-2 border-transparent">固网与智家政策</a>
+                <a href="#incentive" class="nav-item hover:text-[var(--china-unicom-red)] transition py-3 relative border-b-2 border-transparent">市场激励与费用</a>
+                <a href="#index-table" class="nav-item hover:text-[var(--china-unicom-red)] transition py-3 relative border-b-2 border-transparent">文件索引速查</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+        <!-- 移网业务政策 -->
+        <section id="mobile" class="scroll-mt-32">
+            <div class="flex items-center mb-6">
+                <h2 class="text-2xl font-bold flex items-center text-slate-900">
+                    <span class="w-2 h-8 bg-[var(--china-unicom-red)] mr-3 rounded-full"></span>一、移网业务政策要点
+                </h2>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- 满卡考核 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div onclick="toggleSection('m-1')" class="p-5 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition">
+                        <h3 class="font-bold flex items-center text-lg"><span class="mr-3">✅</span> 满卡考核 <span class="ml-2 text-xs font-normal text-slate-400">(2026.1.1–3.31)</span></h3>
+                        <svg id="icon-m-1" class="toggle-icon w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div id="m-1" class="section-content expanded px-6 pb-6">
+                        <div class="grid md:grid-cols-2 gap-6 text-sm">
+                            <div class="space-y-3">
+                                <p class="flex items-center"><span class="w-20 font-semibold text-slate-500">适用对象</span> <span class="bg-slate-100 px-2 py-0.5 rounded">新发展移网用户（含主卡）</span></p>
+                                <div>
+                                    <span class="font-semibold text-slate-500 block mb-2">满卡标准：</span>
+                                    <ul class="space-y-2 pl-2">
+                                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> 79–99元套餐：≥1张副卡</li>
+                                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> 129元及以上套餐：≥2张副卡</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bg-red-50 p-5 rounded-lg border border-red-100 flex flex-col justify-center">
+                                <p class="text-red-700 font-bold mb-2 flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"></path></svg>
+                                    考核规则
+                                </p>
+                                <p class="text-red-600 leading-relaxed">未达标按 <span class="text-2xl font-black underline">20元/户</span> 考核。从入网第3个月起稽核，无特殊情况不予减免。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 靓号管理 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div onclick="toggleSection('m-2')" class="p-5 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition">
+                        <h3 class="font-bold flex items-center text-lg"><span class="mr-3">⚠️</span> 靓号管理 <span class="ml-2 text-xs font-normal text-slate-400">(三类及以上)</span></h3>
+                        <svg id="icon-m-2" class="toggle-icon w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div id="m-2" class="section-content expanded px-6 pb-6 space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="border-l-4 border-orange-400 bg-orange-50 p-4 rounded-r-lg">
+                                <p class="text-sm font-bold text-orange-800 mb-1">FTTR强搭要求</p>
+                                <p class="text-sm text-slate-700">新入网三类及以上靓号，必须 <span class="highlight-red">100%搭载FTTR业务</span>，未执行考核 <span class="highlight-orange">150元/户</span>。</p>
+                            </div>
+                            <div class="border-l-4 border-red-600 bg-red-50 p-4 rounded-r-lg">
+                                <p class="text-sm font-bold text-red-800 mb-1">金融合约禁令</p>
+                                <p class="text-sm text-slate-700">四类及以上靓号 <span class="highlight-red">严禁办理金融合约业务</span>，违规考核 <span class="text-xl font-black">2000元/户</span>。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 质态风险 (表格) -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div onclick="toggleSection('m-3')" class="p-5 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition">
+                        <h3 class="font-bold flex items-center text-lg"><span class="mr-3">🚫</span> 严控质态风险行为</h3>
+                        <svg id="icon-m-3" class="toggle-icon w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div id="m-3" class="section-content expanded overflow-x-auto px-6 pb-6">
+                        <table class="min-w-full text-sm text-left border-collapse">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-500 border-b border-slate-200">
+                                    <th class="px-4 py-3 font-semibold">行为类型</th>
+                                    <th class="px-4 py-3 font-semibold">规则要点</th>
+                                    <th class="px-4 py-3 font-semibold text-center">考核标准</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-4 py-4 font-bold text-slate-900">老转副</td>
+                                    <td class="px-4 py-4 text-slate-600">网龄＞3个月非副卡/亲情卡转副卡</td>
+                                    <td class="px-4 py-4 text-center"><span class="bg-red-100 text-red-700 px-3 py-1 rounded-full font-bold">500元/户</span></td>
+                                </tr>
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-4 py-4 font-bold text-slate-900">移网重入网</td>
+                                    <td class="px-4 py-4 text-slate-600">新开主卡后老号码降套(网龄≥3月，新号≤6月)</td>
+                                    <td class="px-4 py-4 text-center"><span class="bg-red-100 text-red-700 px-3 py-1 rounded-full font-bold">500元/户</span></td>
+                                </tr>
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-4 py-4 font-bold text-slate-900">一拆一装</td>
+                                    <td class="px-4 py-4 text-slate-600">副卡转副卡进入融合，主卡非近6月新入网或异常</td>
+                                    <td class="px-4 py-4 text-center"><span class="bg-red-100 text-red-700 px-3 py-1 rounded-full font-bold">500元/户</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 固网与智家 -->
+        <section id="fixed" class="scroll-mt-32">
+            <h2 class="text-2xl font-bold flex items-center text-slate-900 mb-6">
+                <span class="w-2 h-8 bg-blue-600 mr-3 rounded-full"></span>二、固网与智家业务政策
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <h3 class="font-bold flex items-center mb-4 text-lg text-blue-800"><span class="mr-2">📶</span> FTTR与组网激励</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="text-sm font-medium">双终端-FTTR (1主1从)</span>
+                            <span class="text-lg font-black text-blue-600">150元/套</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="text-sm font-medium">新增从光猫 (T+1)</span>
+                            <span class="text-lg font-black text-blue-600">50元/台</span>
+                        </div>
+                        <p class="text-xs text-slate-400">* 需正常服务、符合纳管要求</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl shadow-lg p-6 text-white relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-blue-500 opacity-10 rounded-full"></div>
+                    <h3 class="font-bold flex items-center mb-4 text-lg"><span class="mr-2">📡</span> 终端调测费应收尽收</h3>
+                    <div class="space-y-4">
+                        <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
+                            <div>
+                                <p class="text-slate-400 text-xs uppercase tracking-wider">ONU 光猫</p>
+                                <p class="text-2xl font-bold">100元<span class="text-sm font-normal text-slate-500 ml-1">/台</span></p>
+                            </div>
+                            <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded border border-green-500/30">社会渠道专属</span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <p class="text-slate-400 text-xs uppercase tracking-wider">机顶盒/宽视界</p>
+                                <p class="text-2xl font-bold">50元<span class="text-sm font-normal text-slate-500 ml-1">/台</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 市场激励 -->
+        <section id="incentive" class="scroll-mt-32">
+            <h2 class="text-2xl font-bold flex items-center text-slate-900 mb-8">
+                <span class="w-2 h-8 bg-green-600 mr-3 rounded-full"></span>三、市场激励与费用政策
+            </h2>
+            
+            <div class="bg-green-600 rounded-2xl p-8 text-white mb-10 shadow-xl shadow-green-100">
+                <p class="text-green-100 text-sm mb-6 font-medium tracking-widest uppercase">2026年核心机制</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="relative">
+                        <span class="text-4xl font-black opacity-20 absolute -top-4 -left-2">01</span>
+                        <h4 class="text-xl font-bold mb-2">有收入，才挂账</h4>
+                        <p class="text-green-100 text-sm">严禁无收入发激励，确保每笔支出有迹可循。</p>
+                    </div>
+                    <div class="relative">
+                        <span class="text-4xl font-black opacity-20 absolute -top-4 -left-2">02</span>
+                        <h4 class="text-xl font-bold mb-2">有挂账，可核销</h4>
+                        <p class="text-green-100 text-sm">对应明确收入明细，核销额必须与支出对齐。</p>
+                    </div>
+                    <div class="relative">
+                        <span class="text-4xl font-black opacity-20 absolute -top-4 -left-2">03</span>
+                        <h4 class="text-xl font-bold mb-2">闭环管理原则</h4>
+                        <p class="text-green-100 text-sm">核销后及时冲账，实现激励费用的全流程受控。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 索引表 -->
+        <section id="index-table" class="scroll-mt-32 pb-20">
+            <h2 class="text-2xl font-bold flex items-center text-slate-900 mb-6">
+                <span class="w-2 h-8 bg-slate-800 mr-3 rounded-full"></span>四、附：政策文件索引速查表
+            </h2>
+            <div class="bg-white shadow-2xl rounded-2xl overflow-hidden border border-slate-200">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-slate-900 text-white">
+                            <tr>
+                                <th class="px-6 py-5 font-bold uppercase tracking-wider">政策主题</th>
+                                <th class="px-6 py-5 font-bold uppercase tracking-wider">对应文件</th>
+                                <th class="px-6 py-5 font-bold uppercase tracking-wider">生效周期</th>
+                                <th class="px-6 py-5 font-bold uppercase tracking-wider text-center">IDX</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="px-6 py-4 font-bold text-slate-900">移网类综合</td>
+                                <td class="px-6 py-4"><span onclick="alert('即将模拟跳转至钉钉文档...')" class="mock-link font-medium">2026一季度移网类稽核提醒.xls</span></td>
+                                <td class="px-6 py-4 text-slate-500">2026.Q1</td>
+                                <td class="px-6 py-4 text-center font-mono font-bold text-blue-600">3</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="px-6 py-4 font-bold text-slate-900">业务稽核细则</td>
+                                <td class="px-6 py-4"><span onclick="alert('系统提示：文件加载中...')" class="mock-link font-medium">附件1：业务稽核关键要点汇总.xlsx</span></td>
+                                <td class="px-6 py-4 text-slate-500">2026.Q1</td>
+                                <td class="px-6 py-4 text-center font-mono font-bold text-blue-600">5,6</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="px-6 py-4 font-bold text-slate-900">激励管控总则</td>
+                                <td class="px-6 py-4"><span onclick="alert('高管权限受限提示')" class="mock-link font-medium">关于明确2026年市场激励管控的通知.pdf</span></td>
+                                <td class="px-6 py-4 text-slate-500">2026全年</td>
+                                <td class="px-6 py-4 text-center font-mono font-bold text-blue-600">4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚备注 -->
+    <footer class="bg-slate-100 border-t border-slate-200 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <h4 class="font-bold text-slate-900 mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    政策执行须知
+                </h4>
+                <div class="grid md:grid-cols-2 gap-8 text-xs text-slate-500 leading-relaxed">
+                    <ul class="space-y-2 list-decimal pl-4">
+                        <li>所有条款依据十堰联通正式文件，冲突时以CBSS系统及最新通知为准。</li>
+                        <li>重复条款遵循“就高不就低”或“最新优先”原则。</li>
+                        <li>红色/加粗内容为高风险点，需重点防范稽核。</li>
+                    </ul>
+                    <div class="flex flex-col justify-end items-end space-y-1">
+                        <p class="font-bold text-slate-700">十堰联通市场运营中心</p>
+                        <p>版本标识：V2026.04.06-Final</p>
+                        <p>内部查阅，注意保密</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 核心逻辑
+        function toggleSection(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                content.classList.add('expanded');
+                icon.classList.remove('rotate');
+            } else {
+                content.classList.remove('expanded');
+                content.classList.add('collapsed');
+                icon.classList.add('rotate');
+            }
+        }
+
+        function expandAll() {
+            document.querySelectorAll('.section-content').forEach(el => {
+                el.classList.remove('collapsed');
+                el.classList.add('expanded');
+            });
+            document.querySelectorAll('.toggle-icon').forEach(el => el.classList.remove('rotate'));
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.section-content').forEach(el => {
+                el.classList.remove('expanded');
+                el.classList.add('collapsed');
+            });
+            document.querySelectorAll('.toggle-icon').forEach(el => el.classList.add('rotate'));
+        }
+
+        // 高级 ScrollSpy 监听
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('nav-active');
+                if (item.getAttribute('href').includes(current)) {
+                    item.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
